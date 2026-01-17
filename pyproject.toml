@@ -1,0 +1,19 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "haxmas-day-9-hardikgupta2232"
+version = "0.0.1"
+description = "Haxmas day 9 python package"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+  "textual"
+]
+
+[project.scripts]
+advent-calendar = "haxmas_day_9_hardikgupta2232.main:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/haxmas_day_9_hardikgupta2232"]
